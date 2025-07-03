@@ -1,5 +1,4 @@
 #Gestion d’un compte bancaire en POO
-from abc import ABC, abstractmethod
 
 class CompteBancaire:
     def __init__(self, nom_proprietaire: str, solde =0.0):
@@ -26,7 +25,9 @@ print(f"le solde est {c1.solde}")
 print("\n")
 
 
-#Challenge :  Système de gestion d’école 
+#Challenge :  Système de gestion d’école
+
+from abc import ABC, abstractmethod
 
 class Personne(ABC):
     def __init__(self,nom,prenom,age):
